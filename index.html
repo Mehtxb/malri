@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malri Immigration Bookings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Free Consultation With Us!</h1>
+    </header>
+    <main>
+        <p>Use the form below to schedule your appointment:</p>
+        <div id="calendly"></div>
+    </main>
+    <footer>
+        <p>©Malri Immigration 2024</p>
+    </footer>
+    <!-- Embed Calendly Script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <script>
+        Calendly.initInlineWidget({
+            url: 'https://calendly.com/malribookings',
+            parentElement: document.getElementById('calendly'),
+            prefill: {},
+            utm: {}
+        });
+    </script>
+</body>
+</html>
